@@ -52,9 +52,7 @@ classDiagram
 
 # Documentação da API (Swagger)
 
-Disponível via [Railway](https://railway.app/)
-
-http://sb-dio-desafio-api-production.up.railway.app
+Disponível em [http://sb-dio-desafio-api-production.up.railway.app](https://sb-dio-desafio-api-production.up.railway.app/swagger-ui/index.html)
 
 # URL de produção
 

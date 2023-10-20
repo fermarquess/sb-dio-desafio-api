@@ -1,5 +1,14 @@
-# SB-dio-Desafio-api
-RESTful API para desafio de projeto da Digital Innovation One criada em Java 18 com Spring Boot 3.1.4
+# Desafio-api-dio-santander-bootcamp
+RESTful API para desafio de projeto da Digital Innovation One criada em Java 17 com Spring Boot 3.1.4
+
+# Principais tecnologias utilizadas
++ Java 17
++ Spring Boot 3.1.4
++ Spring Web
++ Spring JPA Data
++ Open API (Swagger)
++ Railway
+
 
 ## Diagrama de Classes
 
@@ -7,6 +16,7 @@ RESTful API para desafio de projeto da Digital Innovation One criada em Java 18 
 
 classDiagram
   class User {
+    - Long id
     - String name
     - Account account
     - MustWatch[] mustwatch
@@ -14,12 +24,14 @@ classDiagram
   }
 
   class Account {
+    - Long id
     - String username
     - String icon
     - String bio
   }
 
   class MustWatch {
+    - Long id
     - String name
     - Number season
     - String genre
@@ -27,6 +39,7 @@ classDiagram
   }
 
   class Favorite {
+    - Long id
     - String name
     - String genre
     - String broadcaster
@@ -36,3 +49,13 @@ classDiagram
   User "1" *-- "N" MustWatch
   User "1" *-- "1" Favorite
 ```
+
+# Documentação da API (Swagger)
+
+Disponível via [Railway](https://railway.app/)
+
+http://sb-dio-desafio-api-production.up.railway.app
+
+# URL de produção
+
+https://sb-dio-desafio-api-production.up.railway.app/users/1

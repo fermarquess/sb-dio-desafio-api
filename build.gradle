@@ -26,7 +26,8 @@ dependencies {
 
 tasks.jar{
 	manifest {
-		attributes["Main-Class"] = 'desafio.dio.sb.Application'
+		attributes["Main-Class"] =
+				"desafio.dio.sb.Application"
 	}
 }
 
